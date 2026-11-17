@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BK Control · Portfólio do Projeto de Estágio</title>
+  <meta name="description" content="Portfólio do projeto de estágio BK Control (Informatizando Processos BK) — sistema web de gestão operacional da Bread King Londrina.">
+  <link rel="icon" type="image/png" href="assets/bk-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NAVEGAÇÃO ============ -->
+<nav class="nav" aria-label="Seções do portfólio">
+  <div class="wrap">
+    <a class="brand" href="#inicio">
+      <img src="assets/bk-logo.png" alt="">
+      <span>BK Control<small>Portfólio de Estágio</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+    <ul id="menu">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#casos-de-uso">Casos de uso</a></li>
+      <li><a href="#documentacao">Documentação</a></li>
+      <li><a href="#telas">Telas e vídeo</a></li>
+      <li><a href="#relatorio">Relatório</a></li>
+      <li><a href="#aluno">Aluno</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ 1. PÁGINA INICIAL ============ -->
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">🥐 Projeto de Estágio · Engenharia de Software · 2026</span>
+      <h1>BK <span>Control</span></h1>
+      <p class="subtitle">Informatizando Processos BK — Bread King Londrina</p>
+      <p class="lead">
+        Aplicação web que digitaliza a rotina operacional da Bread King Londrina (ACK Comércio de Alimentos Ltda.):
+        cadastro de produtos e usuários, contagem de estoque da loja e da câmara fria com controle de validade,
+        listas de reposição compartilhadas entre a equipe e, em seguida, o acompanhamento de tarefas dos colaboradores.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-light" href="#telas">▶ Ver o sistema funcionando</a>
+        <a class="btn btn-ghost" href="#documentacao">Documentação técnica</a>
+      </div>
+    </div>
+    <div class="hero-shot" aria-hidden="true">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <img src="assets/prints/10-reposicao.png" alt="">
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="objective reveal">
+    <div class="icon" aria-hidden="true">🎯</div>
+    <div>
+      <h2>Objetivo do sistema</h2>
+      <p>
+        Desenvolver uma aplicação web, acessível por computador ou smartphone, para que a gerente e os colaboradores
+        registrem, acompanhem e consultem as informações operacionais da loja em um único ambiente digital —
+        reduzindo o uso de papel, a perda de registros e as falhas de comunicação entre turnos.
+      </p>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ============ 2. SOBRE O PROJETO ============ -->
+<section class="block" id="sobre">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="num">02 · Sobre o projeto</span>
+        <h2>Do papel e prancheta para o digital</h2>
+        <p>O problema, as tecnologias escolhidas e como a solução está organizada.</p>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <article class="card reveal">
+        <h3>O problema</h3>
+        <p>
+          Na Bread King Londrina, o controle de tarefas, a reposição de produtos, a contagem de estoque na loja e na
+          câmara fria e o acompanhamento das validades eram feitos manualmente, com listas impressas, pranchetas, papel e caneta.
+        </p>
+        <ul class="pain-list">
+          <li>Dificuldade para localizar informações e consultar o histórico operacional;</li>
+          <li>Falhas de comunicação entre os turnos;</li>
+          <li>Pouca praticidade na câmara fria (ambiente frio e com baixa iluminação);</li>
+          <li>Dificuldade em comprovar as tarefas exigidas pela franqueadora;</li>
+          <li>Risco de perda de registros e de produtos vencidos.</li>
+        </ul>
+      </article>
+      <article class="card reveal">
+        <h3>A solução</h3>
+        <p>
+          O BK Control centraliza esses processos em uma aplicação web responsiva, com autenticação e perfis de acesso
+          (Administrador e Colaborador).
+        </p>
+        <ul class="pain-list gain-list">
+          <li>Catálogo de produtos e gestão de usuários com ativação/inativação;</li>
+          <li>Contagens com quantidade na loja, na câmara fria e validade de cada lote;</li>
+          <li>Listas de reposição compartilhadas, com progresso de itens repostos;</li>
+          <li>Histórico digital com autor, data e hora de cada registro;</li>
+          <li>Próxima etapa: check-list de tarefas e rendimento dos colaboradores.</li>
+        </ul>
+      </article>
+    </div>
+
+    <h3 class="sub reveal">Tecnologias utilizadas</h3>
+    <!-- Carrossel animado da stack (logos: Devicon) -->
+    <div class="marquee reveal" aria-label="Stack de tecnologias">
+      <ul class="marquee-track">
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt=""><span><b>Java 21</b><small>Back-end</small></span></li>
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/spring/spring-original.svg" alt=""><span><b>Spring Boot</b><small>API REST</small></span></li>
+        <li class="logo-tile"><span class="mono" aria-hidden="true">JWT</span><span><b>Spring Security</b><small>JWT</small></span></li>
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/hibernate/hibernate-original.svg" alt=""><span><b>JPA / Hibernate</b><small>Persistência</small></span></li>
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt=""><span><b>PostgreSQL 16</b><small>Banco de dados</small></span></li>
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt=""><span><b>React 19</b><small>Front-end</small></span></li>
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg" alt=""><span><b>TypeScript</b><small>Tipagem</small></span></li>
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vitejs/vitejs-original.svg" alt=""><span><b>Vite</b><small>Build</small></span></li>
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/axios/axios-plain.svg" alt=""><span><b>Axios</b><small>HTTP client</small></span></li>
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt=""><span><b>Docker</b><small>Banco em container</small></span></li>
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/maven/maven-original.svg" alt=""><span><b>Maven</b><small>Build do back-end</small></span></li>
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/intellij/intellij-original.svg" alt=""><span><b>IntelliJ IDEA</b><small>IDE</small></span></li>
+        <li class="logo-tile"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/figma/figma-original.svg" alt=""><span><b>Figma</b><small>Protótipos</small></span></li>
+        <li class="logo-tile"><span class="mono uml" aria-hidden="true">UML</span><span><b>Astah</b><small>Diagramas UML</small></span></li>
+      </ul>
+    </div>
+
+    <div class="tech-grid reveal">
+      <div class="tech"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/java/java-original.svg" alt=""><span class="tag tag-back">Back-end</span><b>Java 21</b><span>Regras de negócio e API REST</span></div>
+      <div class="tech"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/spring/spring-original.svg" alt=""><span class="tag tag-back">Back-end</span><b>Spring Boot 4.0.7</b><span>Web MVC e Validation</span></div>
+      <div class="tech"><span class="tech-logo mono" aria-hidden="true">JWT</span><span class="tag tag-back">Segurança</span><b>Spring Security + JWT</b><span>Autenticação stateless e perfis de acesso</span></div>
+      <div class="tech"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/hibernate/hibernate-original.svg" alt=""><span class="tag tag-data">Persistência</span><b>Spring Data JPA</b><span>Mapeamento objeto-relacional com Hibernate</span></div>
+      <div class="tech"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt=""><span class="tag tag-front">Front-end</span><b>React 19.2.7</b><span>Interface em componentes reutilizáveis</span></div>
+      <div class="tech"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/typescript/typescript-original.svg" alt=""><span class="tag tag-front">Front-end</span><b>TypeScript + Vite</b><span>Tipagem estática e build do front</span></div>
+      <div class="tech"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt=""><span class="tag tag-data">Dados</span><b>PostgreSQL 16</b><span>Banco relacional <code>bk_control</code></span></div>
+      <div class="tech"><img class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/docker/docker-original.svg" alt=""><span class="tag tag-tool">Ferramentas</span><b>Docker · Astah · Figma</b><span>Banco em container, UML e protótipos</span></div>
+    </div>
+
+    <h3 class="sub reveal">Arquitetura da solução</h3>
+    <div class="arch reveal" role="img" aria-label="Navegador com React se comunica via HTTPS e JSON com a API Spring Boot, que acessa o PostgreSQL via JPA">
+      <div class="node front">
+        <div class="node-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/react/react-original.svg" alt=""></div>
+        <h4>Navegador</h4>
+        <small>React + TypeScript</small>
+      </div>
+      <div class="link" aria-hidden="true">
+        <span class="link-label">HTTPS · JSON</span>
+        <div class="wire"><i class="pkt fwd"></i><i class="pkt back"></i></div>
+      </div>
+      <div class="node back">
+        <div class="node-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/spring/spring-original.svg" alt=""></div>
+        <h4>API REST</h4>
+        <small>Java 21 + Spring Boot</small>
+      </div>
+      <div class="link" aria-hidden="true">
+        <span class="link-label">JPA · SQL</span>
+        <div class="wire"><i class="pkt fwd d2"></i><i class="pkt back d2"></i></div>
+      </div>
+      <div class="node db">
+        <div class="node-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt=""></div>
+        <h4>Banco de dados</h4>
+        <small>PostgreSQL 16</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. CASOS DE USO E CRONOGRAMA ============ -->
+<section class="block" id="casos-de-uso">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="num">03 · Casos de uso e cronograma</span>
+        <h2>O que o sistema faz</h2>
+        <p>Atores: <b>Gerente</b> (perfil Administrador) e <b>Colaborador</b>. O Gerente herda tudo o que o Colaborador pode fazer.</p>
+      </div>
+    </div>
+
+    <div class="uc-grid">
+      <article class="card uc reveal">
+        <div class="uc-top"><h3>Gerenciar Produtos</h3><span class="badge done">Implementado</span></div>
+        <span class="actor">Ator: Gerente</span>
+        <p>Cadastro, edição, consulta, inativação e reativação dos produtos usados nos processos de contagem e reposição (nome, código de barras e preço).</p>
+        <a class="uc-link" href="https://docs.google.com/document/d/1vVwTnUcOjxScXDa_2lUa1oz2zI1ptLGu0d779Pla6Vw/edit?usp=sharing" target="_blank" rel="noopener">Especificação do caso de uso ↗</a>
+      </article>
+      <article class="card uc reveal">
+        <div class="uc-top"><h3>Gerenciar Usuários</h3><span class="badge done">Implementado</span></div>
+        <span class="actor">Ator: Gerente</span>
+        <p>Cadastro, edição, consulta, inativação e reativação de usuários (gerente e colaboradores), com perfil de acesso e troca de senha obrigatória no primeiro acesso.</p>
+        <a class="uc-link" href="https://docs.google.com/document/d/1A0PErM6yh3MI8KvmLQoEimlNGBm_u02MSA841TuvBfI/edit?usp=sharing" target="_blank" rel="noopener">Especificação do caso de uso ↗</a>
+      </article>
+      <article class="card uc reveal">
+        <div class="uc-top"><h3>Gerenciar Reposição</h3><span class="badge done">Implementado</span></div>
+        <span class="actor">Ator: Colaborador</span>
+        <p>Criação, consulta, edição e inativação de listas digitais de reposição compartilhadas, com marcação dos itens já repostos e acompanhamento do progresso.</p>
+        <a class="uc-link" href="https://docs.google.com/document/d/1DbC1n_fXiRM8qKC5fqT-4-x5o2ph9TuFJ4ArHRQtFCc/edit?usp=sharing" target="_blank" rel="noopener">Especificação do caso de uso ↗</a>
+      </article>
+      <article class="card uc reveal">
+        <div class="uc-top"><h3>Realizar Contagem</h3><span class="badge done">Implementado</span></div>
+        <span class="actor">Ator: Colaborador</span>
+        <p>Registro da contagem de produtos da loja e da câmara fria, informando quantidade e validade de cada lote. A contagem pode ser editada por até 72 horas; depois fica disponível apenas para consulta.</p>
+        <a class="uc-link" href="https://docs.google.com/document/d/1ILH-ZWGBzOY2Kvxf8kNdnmRJWgv-2izKHO9C3R27MA0/edit?usp=sharing" target="_blank" rel="noopener">Especificação do caso de uso ↗</a>
+      </article>
+      <article class="card uc reveal">
+        <div class="uc-top"><h3>Gerenciar Tarefas</h3><span class="badge wip">Em desenvolvimento</span></div>
+        <span class="actor">Ator: Gerente</span>
+        <p>Criação, edição, consulta e remoção das tarefas operacionais dos colaboradores em formato de check-list, permitindo acompanhar o rendimento individual com base nas tarefas concluídas.</p>
+        <span class="actor">Especificação em elaboração</span>
+      </article>
+    </div>
+
+    <h3 class="sub reveal">Cronograma de desenvolvimento dos casos de uso</h3>
+    <div class="table-wrap reveal">
+      <table class="wide-table">
+        <thead>
+          <tr><th>Caso de uso</th><th>Descrição resumida</th><th>Situação</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><b>Gerenciar Produtos</b></td><td>CRUD de produtos com inativação e reativação</td><td><span class="badge done">Concluído</span></td></tr>
+          <tr><td><b>Gerenciar Usuários</b></td><td>CRUD de usuários, perfis e primeiro acesso</td><td><span class="badge done">Concluído</span></td></tr>
+          <tr><td><b>Gerenciar Reposição</b></td><td>Listas de reposição e marcação de itens</td><td><span class="badge done">Concluído</span></td></tr>
+          <tr><td><b>Realizar Contagem</b></td><td>Contagem de loja/câmara fria com validade</td><td><span class="badge done">Concluído</span></td></tr>
+          <tr><td><b>Gerenciar Tarefas</b></td><td>Check-list de tarefas e rendimento</td><td><span class="badge wip">Em desenvolvimento</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">O desenvolvimento iniciou em junho de 2026, com encerramento previsto para meados de junho de 2027, conforme o Plano de Estágio.</p>
+
+    <h3 class="sub reveal">Entregas de documentação do estágio</h3>
+    <div class="table-wrap reveal">
+      <table class="wide-table docs-table">
+        <thead><tr><th>Entrega</th><th>Data (última atualização)</th><th>Documentos</th></tr></thead>
+        <tbody>
+          <tr><td>Cronograma de atividades do estágio</td><td class="date">09/05/2026</td>
+            <td class="doc-pills"><a href="https://docs.google.com/spreadsheets/d/17N4JpVbZN6MRMb6BlijvRo2rLxzPuh90V10jZKtopUo/edit?usp=sharing" target="_blank" rel="noopener">Cronograma ↗</a></td></tr>
+          <tr><td>Pedido dos investidores · Especificação suplementar</td><td class="date">16/05/2026</td>
+            <td class="doc-pills"><a href="https://docs.google.com/document/d/1OXIiLVBYkX_xfagJoH-qd7JzI05WMDtI5dWlA64ryAk/edit?usp=sharing" target="_blank" rel="noopener">Pedido do investidor ↗</a><a href="https://docs.google.com/document/d/1POLFTOxqd3GMBD_P7GQo1Torcnh6AIB2zxziI5vFy_U/edit?usp=sharing" target="_blank" rel="noopener">Especificação suplementar ↗</a></td></tr>
+          <tr><td>Documento de visão (informal)</td><td class="date">23/05/2026</td>
+            <td class="doc-pills"><a href="https://docs.google.com/document/d/1YRVCU1mJRwEef9sIiVg4s8WJvCVe2nNwrxYmJQu0S7M/edit?usp=sharing" target="_blank" rel="noopener">Visão ↗</a></td></tr>
+          <tr><td>Telas (protótipos)</td><td class="date">30/05/2026</td>
+            <td class="doc-pills"><a href="https://docs.google.com/document/d/1FY7-7PK3Fvbojop23sOJvEwilp5sJGsyIms4XOD_L_A/edit?usp=sharing" target="_blank" rel="noopener">Telas ↗</a></td></tr>
+          <tr><td>Diagrama de caso de uso</td><td class="date">06/06/2026</td>
+            <td class="doc-pills"><a href="https://drive.google.com/file/d/1MCjtbY7sA4WLnaJIDZocn8CZU9etyxdg/view" target="_blank" rel="noopener">Caso de uso ↗</a></td></tr>
+          <tr><td>Workflow BPMN (As-Is) · Glossário</td><td class="date">13/06/2026</td>
+            <td class="doc-pills"><a href="https://drive.google.com/file/d/1EcL762Sv4v27TXQ0ChpztO3jEJBNexeL/view" target="_blank" rel="noopener">Workflow As-Is ↗</a><a href="https://docs.google.com/document/d/132oDWVwGoTz4BhmLB1_QwY_J6L46DUaw4jgIbwoLDiU/edit?usp=sharing" target="_blank" rel="noopener">Glossário ↗</a></td></tr>
+          <tr><td>Plano de Estágio completo</td><td class="date">20/06/2026</td>
+            <td class="doc-pills"><a href="https://docs.google.com/document/d/1b4Rb3C6ckiNSRWIU2vwqSGNFN6eGBn9t/edit?usp=sharing" target="_blank" rel="noopener">Plano de Estágio ↗</a></td></tr>
+          <tr><td>CRUD funcional</td><td class="date">27/06/2026</td>
+            <td class="doc-pills"><a href="#telas">Telas e vídeo do sistema ↓</a></td></tr>
+          <tr><td>Especificações de caso de uso</td><td class="date">08/08/2026</td>
+            <td class="doc-pills"><a href="https://docs.google.com/document/d/1vVwTnUcOjxScXDa_2lUa1oz2zI1ptLGu0d779Pla6Vw/edit?usp=sharing" target="_blank" rel="noopener">Produtos ↗</a><a href="https://docs.google.com/document/d/1A0PErM6yh3MI8KvmLQoEimlNGBm_u02MSA841TuvBfI/edit?usp=sharing" target="_blank" rel="noopener">Usuários ↗</a><a href="https://docs.google.com/document/d/1DbC1n_fXiRM8qKC5fqT-4-x5o2ph9TuFJ4ArHRQtFCc/edit?usp=sharing" target="_blank" rel="noopener">Reposição ↗</a><a href="https://docs.google.com/document/d/1ILH-ZWGBzOY2Kvxf8kNdnmRJWgv-2izKHO9C3R27MA0/edit?usp=sharing" target="_blank" rel="noopener">Contagem ↗</a></td></tr>
+          <tr><td>DER · Diagrama de classe</td><td class="date">15/08/2026</td>
+            <td class="doc-pills"><a href="https://drive.google.com/file/d/1fHo5EMFzfWV6omvFnn62zLcKy07vvV1F/view" target="_blank" rel="noopener">DER ↗</a><a href="https://drive.google.com/file/d/18kQGIoNjUh4WpQyj51Y1aUlEtCpolhHs/view" target="_blank" rel="noopener">Classe ↗</a></td></tr>
+          <tr><td>Diagramas de estado, sequência e implantação</td><td class="date">22/08/2026</td>
+            <td class="doc-pills"><a href="https://drive.google.com/file/d/1qea6As-p-NX7VL8wE9X1w5XnUFyFBMRZ/view" target="_blank" rel="noopener">Estado · Produto ↗</a><a href="https://drive.google.com/file/d/1uBouA8zDiSFrTPkvXxL32s53oBOjSbh_/view" target="_blank" rel="noopener">Estado · Usuário ↗</a><a href="https://drive.google.com/drive/folders/1iVOVrG6sPaLCTMCLBOTWhpIWhx27FwCn" target="_blank" rel="noopener">Sequência (pasta) ↗</a><a href="https://drive.google.com/file/d/1WeGlTM-ZgIm0RZI09CBdTC8UsgPp2hhx/view" target="_blank" rel="noopener">Implantação ↗</a></td></tr>
+          <tr><td>Relatório de estágio</td><td class="date">29/08/2026</td>
+            <td class="doc-pills"><a href="https://drive.google.com/file/d/1F1OIui5PWqDQS7JaY58FF6FR6MvEWub9/view?usp=sharing" target="_blank" rel="noopener">Relatório (PDF) ↗</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">Fonte: <a href="https://docs.google.com/spreadsheets/d/17N4JpVbZN6MRMb6BlijvRo2rLxzPuh90V10jZKtopUo/edit?gid=1225988094#gid=1225988094" target="_blank" rel="noopener">planilha do cronograma de estágio ↗</a></p>
+  </div>
+</section>
+
+<!-- ============ 4. DOCUMENTAÇÃO ============ -->
+<section class="block" id="documentacao">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="num">04 · Documentação</span>
+        <h2>Diagramas e artefatos</h2>
+        <p>Modelados no Astah UML. Clique na miniatura para ampliar, ou abra o arquivo original no Google Drive.</p>
+      </div>
+    </div>
+
+    <div class="diagram-group reveal">
+      <h3>Diagrama de Classes</h3>
+      <p>Estrutura das classes, atributos, métodos e relacionamentos — com destaque para Usuário e Produto.</p>
+      <div class="diagram-grid">
+        <div class="diagram wide"><button class="thumb" data-full="assets/diagramas/classe.png" data-title="Diagrama de Classes"><img src="assets/diagramas/classe.png" alt="Diagrama de Classes" loading="lazy"></button>
+          <div class="meta"><b>Diagrama de Classes</b><a href="https://drive.google.com/file/d/18kQGIoNjUh4WpQyj51Y1aUlEtCpolhHs/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+      </div>
+    </div>
+
+    <div class="diagram-group reveal">
+      <h3>Diagramas de Sequência</h3>
+      <p>Troca de mensagens entre interface, controladores e entidades em cada operação.</p>
+      <div class="diagram-grid">
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/seq-produtos.png" data-title="Sequência · Gerenciar Produtos"><img src="assets/diagramas/seq-produtos.png" alt="Sequência Gerenciar Produtos" loading="lazy"></button>
+          <div class="meta"><b>Gerenciar Produtos</b><a href="https://drive.google.com/file/d/1GoNUX4QhNCijqiEx2spVGAIxxZv0O6sp/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/seq-usuarios.png" data-title="Sequência · Gerenciar Usuários"><img src="assets/diagramas/seq-usuarios.png" alt="Sequência Gerenciar Usuários" loading="lazy"></button>
+          <div class="meta"><b>Gerenciar Usuários</b><a href="https://drive.google.com/file/d/1Gwbr9u8fXi-kb4glxZ51VucgpLOs-Lv7/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/seq-rep-criar.png" data-title="Sequência · Reposição: Criar"><img src="assets/diagramas/seq-rep-criar.png" alt="Sequência Criar reposição" loading="lazy"></button>
+          <div class="meta"><b>Reposição · Criar</b><a href="https://drive.google.com/file/d/1Um4gmjY5bR768_QrkaAf0lxwRkoRRJVS/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/seq-rep-consultar.png" data-title="Sequência · Reposição: Consultar"><img src="assets/diagramas/seq-rep-consultar.png" alt="Sequência Consultar reposição" loading="lazy"></button>
+          <div class="meta"><b>Reposição · Consultar</b><a href="https://drive.google.com/file/d/1Yy7KDzfr4vYaTPNwg5bgE0p44MXOckD-/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/seq-rep-editar.png" data-title="Sequência · Reposição: Editar"><img src="assets/diagramas/seq-rep-editar.png" alt="Sequência Editar reposição" loading="lazy"></button>
+          <div class="meta"><b>Reposição · Editar</b><a href="https://drive.google.com/file/d/11I2YLtWbBGluYv3u4p3OLMZSsDv4bE_K/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/seq-rep-marcar.png" data-title="Sequência · Reposição: Marcar item"><img src="assets/diagramas/seq-rep-marcar.png" alt="Sequência Marcar item" loading="lazy"></button>
+          <div class="meta"><b>Reposição · Marcar item</b><a href="https://drive.google.com/file/d/1c3qnbXYDSWWA9h1mCaxfLAiDZU32bEWP/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/seq-rep-inativar.png" data-title="Sequência · Reposição: Inativar"><img src="assets/diagramas/seq-rep-inativar.png" alt="Sequência Inativar reposição" loading="lazy"></button>
+          <div class="meta"><b>Reposição · Inativar</b><a href="https://drive.google.com/file/d/18fb7xSrUEQVwn94uIYXLYFFwdHqWuUYw/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/seq-cont-criar.png" data-title="Sequência · Contagem: Criar"><img src="assets/diagramas/seq-cont-criar.png" alt="Sequência Criar contagem" loading="lazy"></button>
+          <div class="meta"><b>Contagem · Criar</b><a href="https://drive.google.com/file/d/1Vu4lSqAoqmp6qbKyf0TaQehDQfWmSmry/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/seq-cont-consultar.png" data-title="Sequência · Contagem: Consultar"><img src="assets/diagramas/seq-cont-consultar.png" alt="Sequência Consultar contagem" loading="lazy"></button>
+          <div class="meta"><b>Contagem · Consultar</b><a href="https://drive.google.com/file/d/1IAeIzKFoE0tQjboOecFLE6RamGXczL29/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/seq-cont-editar.png" data-title="Sequência · Contagem: Editar"><img src="assets/diagramas/seq-cont-editar.png" alt="Sequência Editar contagem" loading="lazy"></button>
+          <div class="meta"><b>Contagem · Editar</b><a href="https://drive.google.com/file/d/1BZLYXfja5Hmg7GRQJHZhwW3aFQMGrOEf/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+      </div>
+    </div>
+
+    <div class="diagram-group reveal">
+      <h3>Diagramas de Estados</h3>
+      <p>Ciclo de vida de Produto e Usuário: ativo ↔ inativo, por ação do usuário.</p>
+      <div class="diagram-grid">
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/estado-produto.png" data-title="Estados · Produto"><img src="assets/diagramas/estado-produto.png" alt="Diagrama de estados de Produto" loading="lazy"></button>
+          <div class="meta"><b>Produto</b><a href="https://drive.google.com/file/d/1qea6As-p-NX7VL8wE9X1w5XnUFyFBMRZ/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/estado-usuario.png" data-title="Estados · Usuário"><img src="assets/diagramas/estado-usuario.png" alt="Diagrama de estados de Usuário" loading="lazy"></button>
+          <div class="meta"><b>Usuário</b><a href="https://drive.google.com/file/d/1uBouA8zDiSFrTPkvXxL32s53oBOjSbh_/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+      </div>
+    </div>
+
+    <div class="diagram-group reveal">
+      <h3>Outros diagramas</h3>
+      <p>Visão de casos de uso, persistência, implantação e o processo atual (As-Is).</p>
+      <div class="diagram-grid">
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/caso-de-uso.png" data-title="Diagrama de Casos de Uso"><img src="assets/diagramas/caso-de-uso.png" alt="Diagrama de casos de uso" loading="lazy"></button>
+          <div class="meta"><b>Casos de Uso</b><a href="https://drive.google.com/file/d/1MCjtbY7sA4WLnaJIDZocn8CZU9etyxdg/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram"><button class="thumb" data-full="assets/diagramas/implantacao.png" data-title="Diagrama de Implantação"><img src="assets/diagramas/implantacao.png" alt="Diagrama de implantação" loading="lazy"></button>
+          <div class="meta"><b>Implantação</b><a href="https://drive.google.com/file/d/1WeGlTM-ZgIm0RZI09CBdTC8UsgPp2hhx/view" target="_blank" rel="noopener">Drive ↗</a></div></div>
+        <div class="diagram doc"><div class="thumb-doc" aria-hidden="true">🗄️</div>
+          <div class="meta"><b>DER (PDF)</b><a href="https://drive.google.com/file/d/1fHo5EMFzfWV6omvFnn62zLcKy07vvV1F/view" target="_blank" rel="noopener">Abrir ↗</a></div></div>
+        <div class="diagram doc"><div class="thumb-doc" aria-hidden="true">🔀</div>
+          <div class="meta"><b>Workflow BPMN As-Is</b><a href="https://drive.google.com/file/d/1EcL762Sv4v27TXQ0ChpztO3jEJBNexeL/view" target="_blank" rel="noopener">Abrir ↗</a></div></div>
+      </div>
+    </div>
+
+    <div class="diagram-group reveal">
+      <h3>Artefatos de requisitos</h3>
+      <p>Documentos de análise que apoiam os diagramas.</p>
+      <div class="doc-links">
+        <a href="https://docs.google.com/document/d/1YRVCU1mJRwEef9sIiVg4s8WJvCVe2nNwrxYmJQu0S7M/edit?usp=sharing" target="_blank" rel="noopener"><span class="ico">📄</span>Documento de Visão (informal)</a>
+        <a href="https://docs.google.com/document/d/1OXIiLVBYkX_xfagJoH-qd7JzI05WMDtI5dWlA64ryAk/edit?usp=sharing" target="_blank" rel="noopener"><span class="ico">📄</span>Pedido do Investidor</a>
+        <a href="https://docs.google.com/document/d/1POLFTOxqd3GMBD_P7GQo1Torcnh6AIB2zxziI5vFy_U/edit?usp=sharing" target="_blank" rel="noopener"><span class="ico">📄</span>Especificação Suplementar</a>
+        <a href="https://docs.google.com/document/d/132oDWVwGoTz4BhmLB1_QwY_J6L46DUaw4jgIbwoLDiU/edit?usp=sharing" target="_blank" rel="noopener"><span class="ico">📄</span>Glossário</a>
+        <a href="https://docs.google.com/document/d/1vVwTnUcOjxScXDa_2lUa1oz2zI1ptLGu0d779Pla6Vw/edit?usp=sharing" target="_blank" rel="noopener"><span class="ico">📝</span>Especificação · Gerenciar Produtos</a>
+        <a href="https://docs.google.com/document/d/1A0PErM6yh3MI8KvmLQoEimlNGBm_u02MSA841TuvBfI/edit?usp=sharing" target="_blank" rel="noopener"><span class="ico">📝</span>Especificação · Gerenciar Usuários</a>
+        <a href="https://docs.google.com/document/d/1DbC1n_fXiRM8qKC5fqT-4-x5o2ph9TuFJ4ArHRQtFCc/edit?usp=sharing" target="_blank" rel="noopener"><span class="ico">📝</span>Especificação · Gerenciar Reposição</a>
+        <a href="https://docs.google.com/document/d/1ILH-ZWGBzOY2Kvxf8kNdnmRJWgv-2izKHO9C3R27MA0/edit?usp=sharing" target="_blank" rel="noopener"><span class="ico">📝</span>Especificação · Realizar Contagem</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. TELAS / VÍDEO ============ -->
+<section class="block" id="telas">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="num">05 · Telas e vídeo</span>
+        <h2>O sistema em funcionamento</h2>
+      </div>
+    </div>
+
+    <div class="card video-card reveal">
+      <div class="video-frame" id="video-frame">
+        <div class="video-placeholder">
+          <div class="play" aria-hidden="true">▶</div>
+          <strong>Vídeo de demonstração</strong>
+          <p>Em gravação — disponível em breve (até 5 minutos).</p>
+        </div>
+      </div>
+      <div class="video-info">
+        <h3>Demonstração em vídeo</h3>
+        <p>Demo passando pelas principais funcionalidades implementadas:</p>
+        <ol>
+          <li>Login e primeiro acesso</li>
+          <li>Dashboard e navegação por perfil</li>
+          <li>Gerenciar Produtos</li>
+          <li>Gerenciar Usuários</li>
+          <li>Realizar Contagem (loja, câmara fria e validade)</li>
+          <li>Gerenciar Reposição (lista e marcação de itens)</li>
+        </ol>
+        <p id="video-link-wrap" hidden><a class="btn btn-outline" id="video-link" href="#" target="_blank" rel="noopener">Abrir vídeo em nova aba ↗</a></p>
+      </div>
+    </div>
+
+    <div class="filter-bar reveal" role="group" aria-label="Filtrar capturas por funcionalidade">
+      <button type="button" aria-pressed="true" data-filter="all">Todas</button>
+      <button type="button" aria-pressed="false" data-filter="acesso">Acesso</button>
+      <button type="button" aria-pressed="false" data-filter="produtos">Produtos</button>
+      <button type="button" aria-pressed="false" data-filter="usuarios">Usuários</button>
+      <button type="button" aria-pressed="false" data-filter="contagem">Contagem</button>
+      <button type="button" aria-pressed="false" data-filter="reposicao">Reposição</button>
+    </div>
+
+    <div class="shots">
+      <figure class="shot reveal" data-cat="acesso"><button data-full="assets/prints/01-login.png" data-title="Tela de login"><img src="assets/prints/01-login.png" alt="Tela de login" loading="lazy"></button>
+        <figcaption><b>Login</b><span>Autenticação por e-mail e senha, com emissão de token JWT.</span></figcaption></figure>
+      <figure class="shot reveal" data-cat="acesso"><button data-full="assets/prints/02-dashboard.png" data-title="Dashboard"><img src="assets/prints/02-dashboard.png" alt="Dashboard" loading="lazy"></button>
+        <figcaption><b>Dashboard</b><span>Atalhos para os módulos e resumo do catálogo e da equipe ativos.</span></figcaption></figure>
+      <figure class="shot reveal" data-cat="produtos"><button data-full="assets/prints/03-produtos.png" data-title="Gerenciar Produtos"><img src="assets/prints/03-produtos.png" alt="Lista de produtos" loading="lazy"></button>
+        <figcaption><b>Gerenciar Produtos</b><span>Catálogo com busca, filtros, ordenação, edição e inativação.</span></figcaption></figure>
+      <figure class="shot reveal" data-cat="produtos"><button data-full="assets/prints/04-produto-form.png" data-title="Cadastro de produto"><img src="assets/prints/04-produto-form.png" alt="Cadastro de produto" loading="lazy"></button>
+        <figcaption><b>Cadastro de produto</b><span>Nome, código de barras e preço, com validação dos campos.</span></figcaption></figure>
+      <figure class="shot reveal" data-cat="usuarios"><button data-full="assets/prints/05-usuarios.png" data-title="Gerenciar Usuários"><img src="assets/prints/05-usuarios.png" alt="Lista de usuários" loading="lazy"></button>
+        <figcaption><b>Gerenciar Usuários</b><span>Equipe ativa e inativa, com perfis Administrador e Colaborador.</span></figcaption></figure>
+      <figure class="shot reveal" data-cat="usuarios"><button data-full="assets/prints/06-usuario-form.png" data-title="Cadastro de usuário"><img src="assets/prints/06-usuario-form.png" alt="Cadastro de usuário" loading="lazy"></button>
+        <figcaption><b>Cadastro de usuário</b><span>Dados pessoais, CPF validado, perfil e senha inicial.</span></figcaption></figure>
+      <figure class="shot reveal" data-cat="contagem"><button data-full="assets/prints/07-contagens.png" data-title="Contagens"><img src="assets/prints/07-contagens.png" alt="Lista de contagens" loading="lazy"></button>
+        <figcaption><b>Contagens</b><span>Histórico com criador, data, número de registros e status de edição.</span></figcaption></figure>
+      <figure class="shot reveal" data-cat="contagem"><button data-full="assets/prints/09-contagem-nova.png" data-title="Nova contagem"><img src="assets/prints/09-contagem-nova.png" alt="Nova contagem" loading="lazy"></button>
+        <figcaption><b>Nova contagem</b><span>Busca por nome ou código de barras; cada validade ocupa uma linha.</span></figcaption></figure>
+      <figure class="shot reveal" data-cat="contagem"><button data-full="assets/prints/08-contagem-detalhe.png" data-title="Detalhe da contagem"><img src="assets/prints/08-contagem-detalhe.png" alt="Detalhe da contagem" loading="lazy"></button>
+        <figcaption><b>Detalhe da contagem</b><span>Quantidades na loja e na câmara fria por validade, editável por 72 h.</span></figcaption></figure>
+      <figure class="shot reveal" data-cat="reposicao"><button data-full="assets/prints/10-reposicao.png" data-title="Listas de reposição"><img src="assets/prints/10-reposicao.png" alt="Listas de reposição" loading="lazy"></button>
+        <figcaption><b>Listas de reposição</b><span>Status e progresso de cada lista compartilhada pela equipe.</span></figcaption></figure>
+      <figure class="shot reveal" data-cat="reposicao"><button data-full="assets/prints/11-reposicao-detalhe.png" data-title="Detalhe da reposição"><img src="assets/prints/11-reposicao-detalhe.png" alt="Detalhe da lista de reposição" loading="lazy"></button>
+        <figcaption><b>Marcar itens repostos</b><span>Check-list com barra de progresso, salvo automaticamente.</span></figcaption></figure>
+      <figure class="shot reveal" data-cat="reposicao"><button data-full="assets/prints/12-reposicao-nova.png" data-title="Nova lista de reposição"><img src="assets/prints/12-reposicao-nova.png" alt="Nova lista de reposição" loading="lazy"></button>
+        <figcaption><b>Nova lista de reposição</b><span>Seleção de produtos, quantidades e observação para o turno.</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. RELATÓRIO ============ -->
+<section class="block" id="relatorio">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="num">06 · Relatório de estágio</span>
+        <h2>Relatório atualizado</h2>
+      </div>
+    </div>
+    <div class="card report reveal">
+      <div class="pdf" aria-hidden="true">PDF</div>
+      <div>
+        <h3>Relatório de Estágio — Informatizando Processos BK</h3>
+        <p>Introdução, objetivos, justificativa, diagramas, telas, workflow As-Is, recursos e ambiente de desenvolvimento, cronograma e artefatos de requisitos — atualizado até a data de entrega deste portfólio.</p>
+      </div>
+      <a class="btn btn-red" id="report-link" href="#" target="_blank" rel="noopener">Abrir PDF ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. IDENTIFICAÇÃO ============ -->
+<section class="block" id="aluno">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="num">07 · Identificação do aluno</span>
+        <h2>Quem desenvolveu</h2>
+      </div>
+    </div>
+    <div class="card student reveal">
+      <div><small>Aluno</small><strong>Caio Algarte Ribas</strong></div>
+      <div><small>Matrícula (RA)</small><strong>244072006</strong></div>
+      <div><small>Professora orientadora</small><strong>Renata Porto Gransoti</strong></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span><b>BK Control</b> · Informatizando Processos BK · Bread King Londrina</span>
+    <span>Bacharelado em Engenharia de Software · Londrina, 2026</span>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada">
+  <button type="button" id="lightbox-close">Fechar ✕</button>
+  <img alt="">
+  <p></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
